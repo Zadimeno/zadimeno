@@ -1,3 +1,4 @@
+@import url("ie.css");
 /*	
 	Author Name	: Konstantin Dankov
 	Author Site	: http://dankov.name
@@ -69,10 +70,7 @@ body { font: 11px "Lucida Grande", Helvetica, Verdana, sans-serif; }
 .blog-title,
 table caption,
 #header .description,
-h1, h2, h3, h4 { font-family: "PTSansNarrowRegular", "Minion Pro", "Arno Pro", Georgia, Verdana, sans-serif; }
-
-#header .blog-title,
-#header .description { font-family: "PTSansNarrowRegular", serif; }
+h1, h2, h3, h4, h5, h6 { font-family: "PTSansNarrowRegular", "Minion Pro", "Arno Pro", Georgia, Verdana, sans-serif; }
 
 /* --- Columns ------------------------------------------------------------------------------------ */
 body.columns-one #page { width: auto;  }
@@ -94,30 +92,29 @@ body.columns-two #sidebar-2 { display: none; }
 
 /* --- Layout ------------------------------------------------------------------------------------ */
 body { background: #f6f9fc; }
-/*body { background: url(images/body1.gif) left top repeat; }*/
 body a { outline: none; }
 
 #page {	padding: 0; border: none; background: none; } /* The entire design is contained within the 'page' id */
 	
-#header { height: auto; background: none; overflow: hidden;  border-bottom: 4px solid #CCC; }
+#header { height: 120px; background: none; overflow: hidden;  border-bottom: 4px solid #CCC; position: relative; }
 
-#header .blog-title { font-size: 5em; font-weight: normal; color: #34425b; padding: 0 0 0 20px; }
-#header .blog-title a { display: block; padding: 0; color: inherit !important; line-height: normal;  }
+#header .blog-title { font-size: 5em; line-height: 20px; font-weight: normal; color: #34425b; padding: 0 0 0 20px; }
+#header .blog-title a { display: block; padding: 0; color: #34425b !important; line-height: normal;  }
 #header .blog-title a:hover { text-decoration: none; }
-#header .description { font-size: 1.5em; color: #34425b !important; padding: 0 0 20px 20px; margin: 0; }
+#header .description { font-size: 1.5em; color: #34425b !important; padding: 0 0 20px 20px; margin: -10px 0 0 0; }
 
 #footer { padding: 10px 0; border-top: 1px solid #CCC; }
 #footer .footerpoweredby { display: none; }
 
-.content { margin: 0 auto; padding: 0;  }
+.content { margin: 0 auto; padding: 0; background: url('images/border.gif') 695px top repeat-y; }
 
 #primary { padding: 20px 40px 20px 30px; float: none; position: static; width: auto;   }
 #primary-wrapper { float: left;   }
 
 /* --- Menu ------------------------------------------------------------------------------------ */
-#header .menu { position: absolute; top: 0; right: 0; }
+#header .menu { position: absolute; top: 0; right: -20px; }
 #header .menu li { margin: 0; padding: 0; }
-#header .menu li a { display: block; color: #000; padding: 40px 20px 10px 15px; border: solid #CCC; border-width: 0 0 0 1px; background: #FFF; }
+#header .menu li a { display: block; color: #000; padding: 93px 30px 15px 15px; border: solid #CCC; border-width: 0 0 0 1px; background: none; }
 #header .menu li a:hover { background: #EEE; }
 #header .menu li.current_page_item a { border-width: 0 0 0 5px; background: #EEE; }
 #header .menu li.admintab a { position: static; background: #FFF; }
@@ -142,11 +139,14 @@ body a { outline: none; }
 .hentry .entry-head .entry-edit { display: none;  }
 .hentry .entry-head .entry-meta {  }
 
-.hentry .entry-content, #dynamic-content .k2-asides .entry-content { padding: 10px 15px; margin: 10px 0 0 0; border: 1px solid #CCC; border-bottom: none; overflow: hidden; text-align: left;  } /* The meat and potatoes of every entry */
+.hentry .entry-content,
+#dynamic-content .k2-asides .entry-content { padding: 10px 15px; margin: 10px 0 0 0; border: 1px solid #CCC; border-bottom: none; overflow: hidden; text-align: left;  } /* The meat and potatoes of every entry */
 
 .hentry .entry-content h2 { font-size: 2em; 	line-height: normal;  margin: 0; padding: 0; font-weight: normal;  }
 .hentry .entry-content h3 { font-size: 1.6em; 	line-height: normal;  margin: 0; padding: 0; font-weight: normal;  }
-.hentry .entry-content h4 { font-size: 1.2em; 	line-height: normal;  margin: 0; padding: 0; font-weight: bold;  }
+.hentry .entry-content h4 { font-size: 1.4em; 	line-height: normal;  margin: 0; padding: 0; font-weight: normal;  }
+.hentry .entry-content h5 { font-size: 1.3em; 	line-height: normal;  margin: 0; padding: 0; font-weight: bold;  }
+.hentry .entry-content h6 { font-size: 1.2em; 	line-height: normal;  margin: 0; padding: 0; font-weight: bold;  }
 
 .hentry .entry-content p { margin: 0; padding-bottom: 20px; text-align: left;  }
 
@@ -155,7 +155,7 @@ body a { outline: none; }
 .hentry .entry-content ul ul,
 .hentry .entry-content ol ol,
 .hentry .entry-content ol ul,
-.hentry .entry-content ul ol { padding: 5px 30px; margin: 0;   }
+.hentry .entry-content ul ol { padding: 10px 30px 0 30px; margin: 0;   }
 
 .hentry .entry-content p + ul,
 .hentry .entry-content p + ol { padding-top: 0; }
@@ -216,36 +216,58 @@ div.trimmed .entry-head { padding-bottom: 10px; }
 #pagetrackwrap { left: 140px; }
 
 /* --- Comments ------------------------------------------------------------------------------------ */
-.hfeed .comments { margin-right: -48px; }
+.hfeed .comments {  }
 .hfeed .comments h4 { padding-left: 20px; font-size: 2.5em; }
 .hfeed .comments .metalinks { padding-left: 5px; }
 .hfeed .comments form#commentform,
 .hfeed .comments ul#pinglist,
 .hfeed .comments ul#commentlist { padding: 0; margin: 10px 0 20px 0; overflow: hidden;  }
-.hfeed .comments ul#commentlist .comment { padding: 20px 30px 30px 20px; position: relative; }
-.hfeed .comments ul#commentlist .comment .comment-head {  }
+.hfeed .comments ul#commentlist .comment { position: relative; }
+.hfeed .comments ul#commentlist .comment.byuser { background: none; }
 .hfeed .comments ul#commentlist .comment .comment-head .gravatar { float: left; margin: 2px 10px 0 0; }
 
-.hfeed .comments ul#commentlist .comment.even {  }
-.hfeed .comments ul#commentlist .comment.thread-even {  }
-.hfeed .comments ul#commentlist .comment.depth-1 {  }
-.hfeed .comments ul#commentlist .comment.comment-author-admin {  }
-.hfeed .comments ul#commentlist .comment.byuser { background: none; }
-
-.hfeed .comments ul#pinglist li,
-.hfeed .comments ul#commentlist li { border-top: 1px solid #CCC; background: none; }
-
-.page .hfeed .comments div#nav-comments { display: none; }
-
-.hfeed .comments div#respond form { border-top: 1px solid #CCC; padding: 20px 30px 30px 20px; }
+.hfeed .comments ul#commentlist #leavecomment { padding: 20px 0; color: #333; font-family: "PTSansNarrowRegular", sans-serif; }
 
 .hfeed .comments form#commentform { margin-bottom: 0; }
 
 .hfeed .comments form#commentform input,
-.hfeed .comments form#commentform textarea { border: 2px solid #CCC; padding: 3px 10px;  }
-.hfeed .comments form#commentform textarea { width: 95%; padding: 8px 10px;  }
-.hfeed .comments form#commentform #submit { cursor: pointer; float: none; padding: 5px 40px;  }
-.hfeed .comments form#commentform #submit:hover { background: #666; color: #FFF; border-color: #333; }
+.hfeed .comments form#commentform textarea { border: 2px solid #CCC; padding: 3px 10px; outline: none; }
+.hfeed .comments form#commentform input:active,
+.hfeed .comments form#commentform input:focus,
+.hfeed .comments form#commentform textarea:active,
+.hfeed .comments form#commentform textarea:focus { border: 2px solid #F90; }
+
+.hfeed .comments form#commentform textarea { width: 95%; height: 180px;  padding: 8px 10px;  }
+.hfeed .comments form#commentform #submit { cursor: pointer; float: none; padding: 5px 40px; background: #FFF; border: 2px solid #F90; color: #940; font-weight: bold; }
+.hfeed .comments form#commentform #submit:hover { background: #F90; color: #FFF; border-color: #d58000; }
+
+/* --- Special styles for comments in posts --- */
+.single .hfeed .comments ul#commentlist li { border: 1px solid #DDD; }
+.single .hfeed .comments ul#commentlist li .comment { padding: 20px; }
+
+.single .hfeed .comments .navigation { border: 1px solid #ddd; }
+.single .hfeed .comments .navigation a { display: block; height: 100%; }
+.single .hfeed .comments .navigation a:hover { background: #F90; text-decoration: none; color: #FFF; }
+
+.single .hfeed .comments div#respond { border: 1px solid #DDD; padding-top: 10px; }
+.single .hfeed .comments div#respond form { padding: 0 20px 20px 20px; }
+
+/* --- Special styles for comments in pages --- */
+.page .hfeed .comments { margin: 0 -49px 0 -20px; }
+.page .hfeed .comments ul#commentlist li { border-top: 1px solid #CCC; background: none; }
+
+.page .hfeed .comments ul#commentlist li .comment { padding: 20px 30px 30px 20px; position: relative; }
+.page .hfeed .comments ul#commentlist li .comment .comment-head {  }
+.page .hfeed .comments ul#commentlist li .comment .comment-head .gravatar { float: left; margin: 2px 10px 0 0; }
+                                     
+.page .hfeed .comments ul#commentlist li .comment.even {  }
+.page .hfeed .comments ul#commentlist li .comment.thread-even {  }
+.page .hfeed .comments ul#commentlist li .comment.depth-1 {  }
+.page .hfeed .comments ul#commentlist li .comment.comment-author-admin {  }
+
+.page .hfeed .comments div#nav-comments { display: none; }
+.page .hfeed .comments div#respond form { border-top: 1px solid #CCC; padding: 20px 30px 30px 20px; }
+
 
 
 #leavecomment,
@@ -256,7 +278,7 @@ div.trimmed .entry-head { padding-bottom: 10px; }
 .secondary { padding: 0; overflow: hidden; padding-top: 20px; } /* Sidebar Class */
 .secondary div { margin: 0; position: static; } /* Sidebar Class */
 
-.secondary#sidebar-1 { border: solid #CCC; border-width: 0 0 0 1px; font-size: 1.1em; }
+.secondary#sidebar-1 { font-size: 1.1em; }
 .secondary#sidebar-2 { margin-left: 0; font-size: 1.1em;   }
 
 /* --- Widgets ------------------------------------------------------------------------------------ */
@@ -360,9 +382,10 @@ div.trimmed .entry-foot {
 .secondary .widget.widget_calendar #calendar_wrap,
 .secondary .widget.widget_search input#s,
 .secondary .widget.widget_search #searchload,
-.hfeed .comments ul#commentlist,
-.hfeed .comments ul#pinglist,
-.hfeed .comments form#commentform,
+.single .hfeed .comments ul#commentlist li,
+.single .hfeed .comments .navigation,
+.single .hfeed .comments .navigation a,
+.single .hfeed .comments div#respond,
 .hfeed .comments form#commentform input,
 .hfeed .comments form#commentform textarea { 
 	-moz-border-radius: 10px;
@@ -376,6 +399,7 @@ div.trimmed .entry-foot {
 	-webkit-border-bottom-right-radius: 10px;
 }
 
+body.blog .hentry .entry-content, 
 body.single .hentry .entry-foot	{ 
 	-moz-border-radius-topleft: 10px;
 	-moz-border-radius-topright: 10px;

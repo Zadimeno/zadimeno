@@ -1,0 +1,25 @@
+/* --- Columns ------------------------------------------------------------------------------------ */
+body.ie.columns-one #page { width: auto;  }
+body.ie.columns-one .secondary { width: 195px;  }
+
+body.ie.columns-two #page,
+body.ie.columns-two #footer { width: 980px; margin: 0 auto;  }
+body.ie.columns-two #primary-wrapper { width: 70%; margin-right: 0; }
+body.ie.columns-two #primary { margin-right: 0; }
+body.ie.columns-two .secondary { width: 29%; }
+body.ie.columns-two #sidebar-2 { display: none; }
+
+.ie .content { zoom: 1; }
+
+.columns-three #page,
+.columns-three #footer { width: 980px; margin: 0 auto; }
+.columns-three #primary-wrapper { width: 50%; }
+.columns-three .secondary { width: 24%; }
+.columns-three .secondary#sidebar-1 {  }
+.columns-three .secondary#sidebar-2 {  }
+
+.ie #primary { padding: 20px 40px 20px 30px; display: block; }
+
+.ie #header .description { margin-top: 0; }
+
+.ie #header .menu li a { zoom: 1; }
