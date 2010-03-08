@@ -408,7 +408,7 @@ msgstr ""
 
 #: ../app/classes/k2.php:490
 msgid "Type and Wait to Search"
-msgstr ""
+msgstr "Въведи текст и изчакай"
 
 #: ../app/classes/k2.php:496
 #, php-format

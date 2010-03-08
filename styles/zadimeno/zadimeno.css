@@ -96,12 +96,12 @@ body a { outline: none; }
 
 #page {	padding: 0; border: none; background: none; } /* The entire design is contained within the 'page' id */
 	
-#header { height: 120px; background: none; overflow: hidden;  border-bottom: 4px solid #CCC; position: relative; }
+#header { height: 120px; background: url(images/logo.gif) 30px top no-repeat; overflow: hidden;  border-bottom: 4px solid #CCC; position: relative; }
 
-#header .blog-title { font-size: 5em; line-height: 20px; font-weight: normal; color: #34425b; padding: 0 0 0 20px; }
+#header .blog-title { font-size: 5em; line-height: 20px; font-weight: normal; color: #34425b; padding: 0 0 0 120px; }
 #header .blog-title a { display: block; padding: 0; color: #34425b !important; line-height: normal;  }
 #header .blog-title a:hover { text-decoration: none; }
-#header .description { font-size: 1.5em; color: #34425b !important; padding: 0 0 20px 20px; margin: -10px 0 0 0; }
+#header .description { font-size: 1.5em; color: #34425b !important; padding: 0 0 20px 120px; margin: -10px 0 0 0; }
 
 #footer { padding: 10px 0; border-top: 1px solid #CCC; }
 #footer .footerpoweredby { display: none; }
@@ -114,8 +114,9 @@ body a { outline: none; }
 /* --- Menu ------------------------------------------------------------------------------------ */
 #header .menu { position: absolute; top: 0; right: -20px; }
 #header .menu li { margin: 0; padding: 0; }
-#header .menu li a { display: block; color: #000; padding: 93px 30px 15px 15px; border: solid #CCC; border-width: 0 0 0 1px; background: none; }
+#header .menu li a { display: block; color: #000; padding: 93px 25px 15px 15px; border: solid #CCC; border-width: 0 0 0 1px; background: none; }
 #header .menu li a:hover { background: #EEE; }
+#header .menu li.blogtab { display: none; }
 #header .menu li.current_page_item a { border-width: 0 0 0 5px; background: #EEE; }
 #header .menu li.admintab a { position: static; background: #FFF; }
 
@@ -134,6 +135,8 @@ body a { outline: none; }
 .page-head h1 { font-size: 3.5em; font-weight: normal;   }
 
 .hentry { margin: 0 0 40px 0; overflow: hidden;  } /* Each entry is contained within the 'hentry' class */
+#post-5.hentry { margin: 0 0 0 0; }
+
 .hentry .entry-head { margin: 0; padding: 0 0 0 5px;  }
 .hentry .entry-head h3.entry-title { padding-bottom: 5px; }
 .hentry .entry-head .entry-edit { display: none;  }
@@ -222,6 +225,13 @@ div.trimmed .entry-head { padding-bottom: 10px; }
 .page .matrix ol li a:hover { background: #EEE; text-decoration: none; color: #000; }
 .page .matrix ol li a:hover img { border-color: #DDD; }
 
+.page .toc { border: 1px solid #DDD; background: #FFF; padding: 20px 20px 20px 60px; }
+.page .toc ol li { list-style: outside decimal; display: list-item; font: 2.2em/1.6em "PTSansNarrowRegular", sans-serif; }
+.page .toc ol li a img { display: none; }
+.page .toc ol li a:hover {  }
+.page .toc ol li a:hover img {  }
+
+
 /* --- Comments ------------------------------------------------------------------------------------ */
 .hfeed .comments {  }
 .hfeed .comments h4 { padding-left: 20px; font-size: 2.5em; }
@@ -249,7 +259,7 @@ div.trimmed .entry-head { padding-bottom: 10px; }
 .hfeed .comments form#commentform #submit:hover { background: #F90; color: #FFF; border-color: #d58000; }
 
 /* --- Special styles for comments in posts --- */
-.single .hfeed .comments ul#commentlist li { border: 1px solid #DDD; }
+.single .hfeed .comments ul#commentlist li { border: 1px solid #DDD; background: #FFF; }
 .single .hfeed .comments ul#commentlist li .comment { padding: 20px; }
 
 .single .hfeed .comments .navigation { border: 1px solid #ddd; }
@@ -257,7 +267,7 @@ div.trimmed .entry-head { padding-bottom: 10px; }
 .single .hfeed .comments .navigation a:hover { background: #F90; text-decoration: none; color: #FFF; }
 
 .single .hfeed .comments div#respond { border: 1px solid #DDD; padding-top: 10px; }
-.single .hfeed .comments div#respond form { padding: 0 20px 20px 20px; }
+.single .hfeed .comments div#respond form { padding: 0 20px 20px 20px; margin-top: 0; }
 
 /* --- Special styles for comments in pages --- */
 .page .hfeed .comments { margin: 0 -49px 0 -20px; }
