@@ -307,6 +307,13 @@ div.trimmed .entry-head { padding-bottom: 10px; }
 
 body.home .secondary .widget.widget_text#text-3 { display: none; }
 
+
+.secondary .widget.widget_pages { }
+.secondary .widget.widget_pages ul li ul li ul { display: none; }
+.secondary .widget.widget_pages ul li ul li.current_page_parent ul,
+.secondary .widget.widget_pages ul li ul li.current_page_item ul { display: block; }
+.secondary .widget.widget_pages ul li.current_page_item > a { font-weight: bold; text-decoration: underline; color: #333; }
+
 .secondary .widget.widget_search { }
 .secondary .widget.widget_search #search-form-wrap { height: auto; position: static; overflow: hidden; }
 .secondary .widget.widget_search label#search-label { position: static;  }
