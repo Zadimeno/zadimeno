@@ -54,6 +54,7 @@
 					<?php
 					} ?>
 				</ol>
+				<div class="cleaner">&nbsp;</div>
 			</div>	
 			<?php } ?>	
 				
