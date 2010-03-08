@@ -305,6 +305,8 @@ div.trimmed .entry-head { padding-bottom: 10px; }
 .secondary .widget.widget_tag_cloud div a { display: block; float: left; padding: 2px 8px 3px 8px; text-decoration: none; font-size: 11px !important; }
 .secondary .widget.widget_tag_cloud div a:hover { background: #666; color: #FFF; }
 
+body.home .secondary .widget.widget_text#text-3 { display: none; }
+
 .secondary .widget.widget_search { }
 .secondary .widget.widget_search #search-form-wrap { height: auto; position: static; overflow: hidden; }
 .secondary .widget.widget_search label#search-label { position: static;  }
