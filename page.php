@@ -32,7 +32,31 @@
 					<?php /* K2 Hook */ do_action('template_entry_foot'); ?>
 				</div><!-- .entry-foot -->
 			</div><!-- #post-ID -->
-
+			
+			<?php
+				global $wpdb;
+				$querystr = "SELECT ID, post_title, guid FROM $wpdb->posts WHERE post_type = 'page' AND post_status = 'publish' AND post_parent = ".$post->ID." ORDER BY post_title";
+				$pageposts = $wpdb->get_results($querystr, OBJECT);
+			?>
+			
+			<?php if( count($pageposts) > 0 ){ ?>
+			<div class="matrix">	
+				<ol>
+					<?php
+					foreach( $pageposts as $page )
+					{ ?>
+						<li>
+							<a href="<?php echo get_permalink( $page->ID ) ?>">
+								<?php echo get_the_post_thumbnail( $page->ID ); ?>
+								<span class="title"><?php echo $page->post_title; ?></span>
+							</a>
+						</li>
+					<?php
+					} ?>
+				</ol>
+			</div>	
+			<?php } ?>	
+				
 			<?php if ( comments_open() ): ?> 
 			<div class="comments">
 				<?php comments_template(); ?>

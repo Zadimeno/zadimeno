@@ -215,6 +215,14 @@ div.trimmed .entry-head { padding-bottom: 10px; }
 #rollpages { left: 75px; }
 #pagetrackwrap { left: 140px; }
 
+.page .matrix {  }
+.page .matrix ol li { width: 22%; display: block; list-style: none outside; float: left; border: 1px solid #CCC; margin: -1px 0 0 -1px; text-align: center; }
+.page .matrix ol li a { display: block; padding: 5px;  }
+.page .matrix ol li a:hover { background: #EEE; }
+.page .matrix ol li a:hover img { border-color: #999; }
+.page .matrix ol li a img { display: block; margin: 5px auto; background: #FFF; padding: 3px; border: 1px solid #FFF; }
+.page .matrix ol li a { display: block; padding: 4px 0; }
+
 /* --- Comments ------------------------------------------------------------------------------------ */
 .hfeed .comments {  }
 .hfeed .comments h4 { padding-left: 20px; font-size: 2.5em; }

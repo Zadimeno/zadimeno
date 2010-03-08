@@ -16,6 +16,12 @@ define('K2_CHILD_THEME', get_stylesheet() != get_template());
 @define( 'WP_CONTENT_DIR', ABSPATH . 'wp-content' );
 @define( 'WP_CONTENT_URL', get_option('siteurl') . '/wp-content' );
 
+if ( function_exists( 'add_theme_support' ) ) { // Added in 2.9
+    add_theme_support( 'post-thumbnails' );
+    set_post_thumbnail_size( 50, 50, true ); // Normal post thumbnails
+    add_image_size( 'single-post-thumbnail', 200, 200, true ); // Permalink thumbnail size
+}
+
 /* Blast you red baron! Initialize the k2 system! */
 require_once(TEMPLATEPATH . '/app/classes/k2.php');
 K2::init();
