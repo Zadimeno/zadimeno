@@ -199,7 +199,9 @@ body.single .hentry .entry-foot { background: #F5F5F5; }
 body.page .hentry .entry-foot { display: none;  }
 body.page .hentry .entry-title { text-align: left; font-size: 2.7em; margin-left: 0; }
 
-body.page #current-content .entry-title  { margin-left: 0; }
+body.page #current-content .entry-title  { margin-left: 0; text-align: left; }
+body.page .hentry .entry-content .page-image { display: block; padding: 5px; background: #FFF; border: 1px solid #DDD; float: right; margin: 0 0 20px 20px; }
+body.page .hentry .entry-content .page-image { display: block; padding: 5px; background: #FFF; border: 1px solid #DDD; float: right; margin: 0 0 20px 20px; }
 
 body.single .hentry .entry-head h1.entry-title { font-size: 3.2em; }
 

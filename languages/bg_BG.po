@@ -40,15 +40,15 @@ msgstr "За да видите коментарите към тази публи
 #: ../comments.php:13
 #, php-format
 msgid "%1$s %2$s to &#8220;%3$s&#8221;"
-msgstr ""
+msgstr "%1$s %2$s за &#8220;%3$s&#8221;"
 
 #: ../comments.php:13
 msgid "Responses"
-msgstr "Отговори"
+msgstr "Мнения"
 
 #: ../comments.php:13
 msgid "Response"
-msgstr "Отговор"
+msgstr "Мнение"
 
 #: ../comments.php:16
 msgid "Feed for this Entry"
@@ -131,7 +131,7 @@ msgstr "(задължително)"
 
 #: ../comments.php:144
 msgid "Mail"
-msgstr ""
+msgstr "Майл"
 
 #: ../comments.php:144
 msgid "will not be published"
@@ -139,7 +139,7 @@ msgstr "няма да се публикува"
 
 #: ../comments.php:151
 msgid "Website"
-msgstr ""
+msgstr "Уебсайт"
 
 #: ../comments.php:157
 #, php-format
@@ -371,19 +371,19 @@ msgstr ""
 
 #: ../app/classes/header.php:98
 msgid "Select an Image:"
-msgstr ""
+msgstr "Избери картинка:"
 
 #: ../app/classes/header.php:102
 msgid "Off"
-msgstr ""
+msgstr "Изключено"
 
 #: ../app/classes/header.php:103
 msgid "Random"
-msgstr ""
+msgstr "Произволно"
 
 #: ../app/classes/header.php:116
 msgid "Rename the 'Blog' tab:"
-msgstr ""
+msgstr "Преименувай 'Блог' таба:"
 
 #: ../app/classes/k2.php:82
 msgid "Published on %date% in %categories%. %comments% %tags%"
@@ -392,19 +392,19 @@ msgstr "Публикувано на %date% %time% в %categories%. %comments% %t
 #: ../app/classes/k2.php:185
 #: ../app/display/options.php:50
 msgid "K2 Options"
-msgstr ""
+msgstr "К2 Опции"
 
 #: ../app/classes/k2.php:192
 msgid "K2 Support Group"
-msgstr ""
+msgstr "К2 Група за поддръжка"
 
 #: ../app/classes/k2.php:193
 msgid "K2 Bug Tracker"
-msgstr ""
+msgstr "К2 Система за следене на бъгове"
 
 #: ../app/classes/k2.php:214
 msgid "Do you want to restore K2 to default settings? This will remove all your K2 settings."
-msgstr ""
+msgstr "Искате ли да върнете фабричните настройки на К2? Тове ще изтрие всички настройки, които сте направили."
 
 #: ../app/classes/k2.php:490
 msgid "Type and Wait to Search"
@@ -413,114 +413,114 @@ msgstr "Въведи текст и изчакай"
 #: ../app/classes/k2.php:496
 #, php-format
 msgid "Page %1$d of %2$d"
-msgstr ""
+msgstr "Страница %1$d от %2$d"
 
 #: ../app/classes/styles.php:165
 msgid "Child Theme"
-msgstr ""
+msgstr "Под тема"
 
 #: ../app/classes/styles.php:170
 msgid "Styles"
-msgstr ""
+msgstr "Стилове"
 
 #: ../app/classes/styles.php:174
 #, php-format
 msgid "The directory: <strong>%s</strong>, needed to store custom styles is missing. For you to be able to use custom styles, you need to add this directory."
-msgstr ""
+msgstr "Директорията: <strong>%s</strong>, в която се съхраняват допълнителните стилове, не е намерена. За да използвате допълнителни стилове трябва да я добавите."
 
 #: ../app/classes/styles.php:179
 msgid "No need to edit core files, K2 is highly customizable."
-msgstr ""
+msgstr "Няма нужда да редактирата системните файлове, K2 е силно конфигурируем."
 
 #: ../app/classes/styles.php:180
 msgid "Read&nbsp;more."
-msgstr ""
+msgstr "Прочети&nbsp;още."
 
 #: ../app/classes/styles.php:187
 msgid "Styles Directory:"
-msgstr ""
+msgstr "Директория за стилове:"
 
 #: ../app/classes/styles.php:190
 msgid "Styles Root Directory:"
-msgstr ""
+msgstr "Основна директория за стилове:"
 
 #: ../app/classes/styles.php:208
 msgid "Style"
-msgstr ""
+msgstr "Стил"
 
 #: ../app/classes/styles.php:209
 msgid "Author"
-msgstr ""
+msgstr "Автор"
 
 #: ../app/classes/styles.php:210
 msgid "Version"
-msgstr ""
+msgstr "Версия"
 
 #: ../app/classes/styles.php:211
 msgid "Tags"
-msgstr ""
+msgstr "Тагове"
 
 #: ../app/classes/styles.php:219
 #, php-format
 msgid "There are no css files found in: <strong>%s</strong>."
-msgstr ""
+msgstr "Няма намерени CSS файлове в: <strong>%s</strong>."
 
 #: ../app/classes/styles.php:365
 msgid "Styled with <a href=\"%stylelink%\" title=\"%style% by %author%\">%style%</a>"
-msgstr ""
+msgstr "Стилизирано с <a href=\"%stylelink%\" title=\"%style% by %author%\">%style%</a>"
 
 #: ../app/display/options.php:9
 msgid "Single Column"
-msgstr ""
+msgstr "Една колона"
 
 #: ../app/display/options.php:10
 msgid "Two Columns"
-msgstr ""
+msgstr "Две колони"
 
 #: ../app/display/options.php:11
 msgid "Three Columns"
-msgstr ""
+msgstr "Три колони"
 
 #: ../app/display/options.php:12
 msgid "Dynamic Columns"
-msgstr ""
+msgstr "Динамични колони"
 
 #: ../app/display/options.php:24
 msgid "Published by %author% on %date% in %categories%. %comments%. %tags%."
-msgstr ""
+msgstr "Публикувано от %author% на %date% в %time% in %categories%. %comments%. %tags%."
 
 #: ../app/display/options.php:31
 msgid "K2 has been restored to default settings."
-msgstr ""
+msgstr "Настройките на К2 бяха възтановени до фабричните"
 
 #: ../app/display/options.php:37
 msgid "K2 Options have been updated"
-msgstr ""
+msgstr "Настройките на K2 са обновени."
 
 #: ../app/display/options.php:43
 #, php-format
 msgid "The K2 directory: <strong>%s</strong>, contains spaces. For K2 to function properly, you will need to remove the spaces from the directory name."
-msgstr ""
+msgstr "Директорията на К2: <strong>%s</strong>, съдържа интервали. За правилното функциониране на К2 трябва да премахнтете интервалите от името на директорията."
 
 #: ../app/display/options.php:54
 msgid "Columns"
-msgstr ""
+msgstr "Колони"
 
 #: ../app/display/options.php:65
 msgid "Select Dynamic Columns for K2 to dynamically reduce the number of columns depending on user's browser width."
-msgstr ""
+msgstr "Изберете Динамични колони за да"
 
 #: ../app/display/options.php:69
 msgid "Advanced Navigation"
-msgstr ""
+msgstr "Разширена Навигация"
 
 #: ../app/display/options.php:75
 msgid "Seamlessly search and navigate old posts."
-msgstr ""
+msgstr "Лесно търсене и навигация в старите постове."
 
 #: ../app/display/options.php:80
 msgid "JavaScript Animations"
-msgstr ""
+msgstr "JavaScript Анимации"
 
 #: ../app/display/options.php:83
 msgid "Ajax Success JavaScript"
@@ -528,15 +528,15 @@ msgstr ""
 
 #: ../app/display/options.php:84
 msgid "JavaScript code that will be executed whenever Advanced Navigation is dynamically loaded."
-msgstr ""
+msgstr "JavaScript код, който ще бъде стартиран когато Разширената Навигация е динамично заредена."
 
 #: ../app/display/options.php:90
 msgid "Archives Page"
-msgstr ""
+msgstr "Архив"
 
 #: ../app/display/options.php:96
 msgid "Installs a pre-made archives page."
-msgstr ""
+msgstr "Инсталира страница Архив"
 
 #: ../app/display/options.php:99
 msgid "Asides"
@@ -548,11 +548,11 @@ msgstr ""
 
 #: ../app/display/options.php:115
 msgid "Post Entry"
-msgstr ""
+msgstr "Съдържание на публикация"
 
 #: ../app/display/options.php:118
 msgid "Use the following keywords: %author%, %categories%, %comments%, %date%, %tags% and %time%. <!--You can also use third-party shortcodes.-->"
-msgstr ""
+msgstr "Изполвай следните ключови думи: %author%, %categories%, %comments%, %date%, %tags% and %time%."
 
 #: ../app/display/options.php:125
 msgid "Top Meta:"
@@ -564,16 +564,16 @@ msgstr ""
 
 #: ../app/display/options.php:144
 msgid "Preview"
-msgstr ""
+msgstr "Преглед"
 
 #: ../app/display/options.php:151
 #, php-format
 msgid "Permanent Link to \"%s\""
-msgstr ""
+msgstr "Постоянен линк до \"%s\""
 
 #: ../app/display/options.php:179
 msgid "Save Changes"
-msgstr ""
+msgstr "Запази промените"
 
 #: ../app/display/options.php:181
 msgid "Revert to K2 Defaults"
@@ -581,26 +581,26 @@ msgstr ""
 
 #: ../app/display/options.php:182
 msgid "Install a Default Set of Widgets"
-msgstr ""
+msgstr "Инсталирай предифинаран група от Уиджети"
 
 #: ../app/display/rollingarchive.php:11
 #: ../app/display/rollingarchive.php:12
 #: ../app/includes/wp-compat.php:290
 msgid "Home"
-msgstr ""
+msgstr "Начало"
 
 #: ../app/display/rollingarchive.php:14
 #: ../app/display/rollingarchive.php:15
 msgid "Loading"
-msgstr ""
+msgstr "Зарежда се"
 
 #: ../app/display/rollingarchive.php:24
 msgid "Less"
-msgstr ""
+msgstr "По-малко"
 
 #: ../app/display/rollingarchive.php:25
 msgid "More"
-msgstr ""
+msgstr "Повече"
 
 #: ../app/display/rollingarchive.php:26
 msgid "Trim"
@@ -613,7 +613,7 @@ msgstr ""
 #: ../app/display/theloop.php:20
 #, php-format
 msgid "Daily Archive for %s"
-msgstr ""
+msgstr "Дневен Архив за %s"
 
 #: ../app/display/theloop.php:20
 msgid "F jS, Y"
@@ -622,46 +622,46 @@ msgstr ""
 #: ../app/display/theloop.php:24
 #, php-format
 msgid "Monthly Archive for %s"
-msgstr ""
+msgstr "Месечен Архив за %s"
 
 #: ../app/display/theloop.php:28
 #, php-format
 msgid "Yearly Archive for %s"
-msgstr ""
+msgstr "Годишен Архив за %s"
 
 #: ../app/display/theloop.php:28
 msgid "Y"
-msgstr ""
+msgstr "Година"
 
 #: ../app/display/theloop.php:37
 #, php-format
 msgid "Archive for the '%s' Category"
-msgstr ""
+msgstr "Архив за категория '%s'"
 
 #: ../app/display/theloop.php:42
 #, php-format
 msgid "Tag Archive for '%s'"
-msgstr ""
+msgstr "Архив за таг '%s'"
 
 #: ../app/display/theloop.php:46
 #, php-format
 msgid "Author Archive for %s"
-msgstr ""
+msgstr "Архив по Автор %s"
 
 #: ../app/display/theloop.php:52
 #, php-format
 msgid "Search Results for '%s'"
-msgstr ""
+msgstr "Резултати от търсене за '%s'"
 
 #: ../app/display/theloop.php:65
 #, php-format
 msgid "Page %1$s of %2$s"
-msgstr ""
+msgstr "Страница %1$s от %2$s"
 
 #: ../app/includes/comments.php:111
 #: ../app/includes/comments.php:200
 msgid "Permanent Link to this Comment"
-msgstr ""
+msgstr "Постоянен линк към това мнение"
 
 #: ../app/includes/comments.php:114
 #: ../app/includes/comments.php:197
@@ -677,7 +677,7 @@ msgstr ""
 
 #: ../app/includes/comments.php:125
 msgid "Your comment is awaiting moderation."
-msgstr ""
+msgstr "Твоето мнение очаква одобрението на някой от модераторите."
 
 #: ../app/includes/comments.php:192
 #, php-format
@@ -686,7 +686,7 @@ msgstr ""
 
 #: ../app/includes/comments.php:193
 msgid "Comment"
-msgstr ""
+msgstr "Мнение"
 
 #: ../app/includes/comments.php:193
 msgid "Trackback"
@@ -703,16 +703,16 @@ msgstr ""
 #: ../app/includes/display.php:47
 #, php-format
 msgid "Permanent Link to %s"
-msgstr ""
+msgstr "Постоянен линк до %s"
 
 #: ../app/includes/display.php:61
 msgid "Uncategorized"
-msgstr ""
+msgstr "Некатегоризиран"
 
 #: ../app/includes/display.php:77
 #, php-format
 msgid "View all posts in %s"
-msgstr ""
+msgstr "Виж всички публикации в %s"
 
 #: ../app/includes/info.php:52
 msgid "%B, %Y"
@@ -720,12 +720,12 @@ msgstr ""
 
 #: ../app/includes/pluggable.php:73
 msgid " and "
-msgstr ""
+msgstr "и"
 
 #: ../app/includes/pluggable.php:88
 #, php-format
 msgid "View all posts by %s"
-msgstr ""
+msgstr "Виж всички публикации от %s"
 
 #: ../app/includes/pluggable.php:102
 msgid "<span>Tags:</span> "
@@ -745,7 +745,7 @@ msgstr "% <span>Мнения</span>"
 
 #: ../app/includes/pluggable.php:120
 msgid "<span>Closed</span>"
-msgstr ""
+msgstr "<span>Затворен</span>"
 
 #: ../app/includes/widgets.php:16
 msgid "Message about the current area and optional front-page message"
@@ -785,7 +785,7 @@ msgstr ""
 #: ../app/includes/widgets.php:97
 #: ../app/includes/widgets.php:166
 msgid "Title:"
-msgstr ""
+msgstr "Заглавие:"
 
 #: ../app/includes/widgets.php:102
 msgid "About Text:"
@@ -831,11 +831,11 @@ msgstr ""
 
 #: ../blocks/k2-footer.php:30
 msgid "Entries Feed"
-msgstr ""
+msgstr "Хранилка"
 
 #: ../blocks/k2-footer.php:31
 msgid "Comments Feed"
-msgstr ""
+msgstr "Хранилка за мнения"
 
 #: ../blocks/k2-footer.php:37
 #, php-format

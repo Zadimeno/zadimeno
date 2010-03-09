@@ -25,6 +25,10 @@
 				</div><!-- .entry-head -->
 
 				<div class="entry-content">
+					<?php if ( function_exists('has_post_thumbnail') and has_post_thumbnail() ): ?>
+						<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'single-post-thumbnail', array( 'class' => 'page-image' ) ); ?></a>
+					<?php endif; ?>
+					
 					<?php the_content(); ?>
 				</div><!-- .entry-content -->
 
