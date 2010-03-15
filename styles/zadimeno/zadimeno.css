@@ -59,7 +59,8 @@
 	src: local('fonts/PT Sans Bold'), local('fonts/PTSans-Bold'), url('fonts/PTSansBold.woff') format('woff'), url('fonts/PTSansBold.ttf') format('truetype'), url('fonts/PTSansBold.svg#PTSans-Bold') format('svg');
 }
 
-a { color: #369; text-decoration: none; }
+/* --- Common styles ------------------------------------------------------------------------------------ */
+a { color: #369; text-decoration: none; outline: none; }
 a img { border: none; }
 li { display: block; list-style: none outside;  }
 
@@ -83,52 +84,41 @@ body.columns-two #primary { margin-right: 0; }
 body.columns-two .secondary { width: 29%; }
 body.columns-two #sidebar-2 { display: none; }
 
-.columns-three #page,
-.columns-three #footer { width: 980px; margin: 0 auto; }
-.columns-three #primary-wrapper { width: 50%; }
-.columns-three .secondary { width: 24%; }
-.columns-three .secondary#sidebar-1 {  }
-.columns-three .secondary#sidebar-2 {  }
+body.columns-three #page,
+body.columns-three #footer { width: 980px; margin: 0 auto; }
+body.columns-three #primary-wrapper { width: 50%; }
+body.columns-three .secondary { width: 24%; }
+body.columns-three .secondary#sidebar-1 {  }
+body.columns-three .secondary#sidebar-2 {  }
 
 /* --- Layout ------------------------------------------------------------------------------------ */
 body { background: #f6f9fc url('images/background.jpg') center top no-repeat; }
-body a { outline: none; }
 
 #page {	padding: 0; border: none; background: none; } /* The entire design is contained within the 'page' id */
 	
-#header { height: 120px; background: url(images/logo.gif) 30px top no-repeat; overflow: hidden;  border-bottom: 4px solid #CCC; position: relative; }
+#header { height: 120px; background: url(images/logo.gif) 30px top no-repeat; overflow: hidden;  border-bottom: 4px solid #b6c1cb; position: relative; }
 
 #header .blog-title { font-size: 5em; line-height: 20px; font-weight: normal; color: #34425b; padding: 0 0 0 120px; }
 #header .blog-title a { display: block; padding: 0; color: #34425b !important; line-height: normal;  }
 #header .blog-title a:hover { text-decoration: none; }
 #header .description { font-size: 1.5em; color: #34425b !important; padding: 0 0 20px 120px; margin: -10px 0 0 0; }
 
-#footer { padding: 10px 0; border-top: 1px solid #CCC; }
-#footer .footerpoweredby { display: none; }
+#primary { padding: 20px 20px 20px 30px; float: none; position: static; width: auto;   }
+#primary-wrapper { float: left;   }
 
 .content { margin: 0 auto; padding: 0; background: url('images/border.gif') 695px top repeat-y; }
 
-#primary { padding: 20px 40px 20px 30px; float: none; position: static; width: auto;   }
-#primary-wrapper { float: left;   }
+#footer { padding: 10px 0; border-top: 1px solid #ccd5de; }
+#footer .footerpoweredby { display: none; }
 
 /* --- Menu ------------------------------------------------------------------------------------ */
 #header .menu { position: absolute; top: 0; right: -20px; }
 #header .menu li { margin: 0; padding: 0; }
-#header .menu li a { display: block; color: #000; padding: 93px 25px 15px 15px; border: solid #CCC; border-width: 0 0 0 1px; background: none; }
-#header .menu li a:hover { background: #EEE; }
+#header .menu li a { display: block; color: #000; padding: 93px 25px 15px 15px; border: solid #ccd5de; border-width: 0 0 0 1px; background: none; }
+#header .menu li a:hover { background: #dde3e9; }
 #header .menu li.blogtab { display: none; }
-#header .menu li.current_page_item a { border-width: 0 0 0 5px; background: #EEE; }
-#header .menu li.admintab a { position: static; background: #FFF; }
-
-#header .menu li a { 
-	-webkit-border-top-left-radius: 0;
-	-webkit-border-top-right-radius: 0;
-}
-
-#header .menu li.admintab a {
-	-webkit-border-bottom-left-radius: 0; -webkit-border-bottom-right-radius: 0;
-}
-
+#header .menu li.current_page_item a { border-width: 0 0 0 5px; background: #dde3e9; }
+#header .menu li.admintab a { position: static; background: #dde3e9; }
 
 /* --- Posts ------------------------------------------------------------------------------------ */
 .page-head { padding: 20px 0;   }
@@ -142,8 +132,7 @@ body a { outline: none; }
 .hentry .entry-head .entry-edit { display: none;  }
 .hentry .entry-head .entry-meta {  }
 
-.hentry .entry-content,
-#dynamic-content .k2-asides .entry-content { padding: 10px 15px; margin: 10px 0 0 0; border: 1px solid #CCC; background: #f6f9fc; border-bottom: none; overflow: hidden; text-align: left;  } /* The meat and potatoes of every entry */
+.hentry .entry-content { padding: 10px 15px; margin: 10px 0 0 0; border: 1px solid #CCC; background: #f6f9fc; border-bottom: none; overflow: hidden; text-align: left;  } /* The meat and potatoes of every entry */
 
 .hentry .entry-content h2 { font-size: 2em; 	line-height: normal;  margin: 0; padding: 0; font-weight: normal;  }
 .hentry .entry-content h3 { font-size: 1.6em; 	line-height: normal;  margin: 0; padding: 0; font-weight: normal;  }
@@ -200,6 +189,7 @@ body.page .hentry .entry-foot { display: none;  }
 body.page .hentry .entry-title { text-align: left; font-size: 2.7em; margin-left: 0; }
 
 body.page #current-content .entry-title  { margin-left: 0; text-align: left; }
+body.page .hentry .entry-content { background: none; }
 body.page .hentry .entry-content .page-image { display: block; padding: 5px; background: #FFF; border: 1px solid #DDD; float: right; margin: 0 0 20px 20px; }
 body.page .hentry .entry-content .page-image { display: block; padding: 5px; background: #FFF; border: 1px solid #DDD; float: right; margin: 0 0 20px 20px; }
 
@@ -220,18 +210,19 @@ div.trimmed .entry-head { padding-bottom: 10px; }
 #rollpages { left: 75px; }
 #pagetrackwrap { left: 140px; }
 
-.page .matrix { padding-bottom: 40px; }
-.page .matrix ol li { width: 23.5%; display: block; list-style: none outside; float: left; border: 1px solid #DDD; margin: -1px 0 0 -1px; text-align: center; }
-.page .matrix ol li a { display: block; padding: 10px 5px; background: #FFF; }
-.page .matrix ol li a img { display: block; margin: 5px auto 10px auto; background: #FFF; padding: 10px 25px; border: 1px solid #FFF; }
-.page .matrix ol li a:hover { background: #EEE; text-decoration: none; color: #000; }
-.page .matrix ol li a:hover img { border-color: #DDD; }
+.page #matrix { padding-bottom: 40px; }
+.page #matrix ol li { width: 23.5%; display: block; list-style: none outside; float: left; border: 1px solid #DDD; margin: -1px 0 0 -1px; text-align: center; }
+.page #matrix ol li a { display: block; padding: 10px 5px; background: #FFF; }
+.page #matrix ol li a img { display: block; margin: 5px auto 10px auto; background: #FFF; padding: 10px 25px; border: 1px solid #FFF; }
+.page #matrix ol li a:hover { background: #EEE; text-decoration: none; color: #000; }
+.page #matrix ol li a:hover img { border-color: #DDD; }
 
-.page .toc { border: 1px solid #DDD; background: #FFF; padding: 20px 20px 20px 60px; }
-.page .toc ol li { list-style: outside decimal; display: list-item; font: 2.2em/1.6em "PTSansNarrowRegular", sans-serif; }
-.page .toc ol li a img { display: none; }
-.page .toc ol li a:hover {  }
-.page .toc ol li a:hover img {  }
+.page #toc { border: 1px solid #DDD; background: #FFF; padding: 20px 40px 20px 60px; }
+.page #toc ol li { list-style: outside decimal; display: list-item; font: 2.2em/1.6em "PTSansNarrowRegular", sans-serif; }
+.page #toc ol li .desc { display: block; font: 0.55em "Lucida Grande", Helvetica, Verdana, sans-serif; padding-bottom: 10px; }
+.page #toc ol li a img { display: none; }
+.page #toc ol li a:hover {  }
+.page #toc ol li a:hover img {  }
 
 
 /* --- Comments ------------------------------------------------------------------------------------ */
@@ -254,11 +245,11 @@ div.trimmed .entry-head { padding-bottom: 10px; }
 .hfeed .comments form#commentform input:active,
 .hfeed .comments form#commentform input:focus,
 .hfeed .comments form#commentform textarea:active,
-.hfeed .comments form#commentform textarea:focus { border: 2px solid #F90; }
+.hfeed .comments form#commentform textarea:focus { border: 2px solid #369; }
 
 .hfeed .comments form#commentform textarea { width: 95%; height: 180px;  padding: 8px 10px;  }
-.hfeed .comments form#commentform #submit { cursor: pointer; float: none; padding: 5px 40px; background: #FFF; border: 2px solid #F90; color: #940; font-weight: bold; }
-.hfeed .comments form#commentform #submit:hover { background: #F90; color: #FFF; border-color: #d58000; }
+.hfeed .comments form#commentform #submit { cursor: pointer; float: none; padding: 5px 40px; background: #FFF; border: 2px solid #369; color: #369; font-weight: bold; }
+.hfeed .comments form#commentform #submit:hover { background: #369; color: #FFF; border-color: #58B; }
 
 /* --- Special styles for comments in posts --- */
 .single .hfeed .comments ul#commentlist li { border: 1px solid #DDD; background: #FFF; }
@@ -266,7 +257,7 @@ div.trimmed .entry-head { padding-bottom: 10px; }
 
 .single .hfeed .comments .navigation { border: 1px solid #ddd; }
 .single .hfeed .comments .navigation a { display: block; height: 100%; }
-.single .hfeed .comments .navigation a:hover { background: #F90; text-decoration: none; color: #FFF; }
+.single .hfeed .comments .navigation a:hover { background: #369; text-decoration: none; color: #FFF; }
 
 .single .hfeed .comments div#respond { border: 1px solid #DDD; padding-top: 10px; }
 .single .hfeed .comments div#respond form { padding: 0 20px 20px 20px; margin-top: 0; }
@@ -302,7 +293,7 @@ div.trimmed .entry-head { padding-bottom: 10px; }
 
 /* --- Widgets ------------------------------------------------------------------------------------ */
 .secondary .widget { margin-bottom: 30px; }
-.secondary .widget h4 { padding: 0 10px 5px 15px; border-bottom: 1px solid #DDD; margin-bottom: 10px; color: #333; }
+.secondary .widget h4 { padding: 0 10px 5px 15px; border-bottom: 1px solid #ccd5de; margin-bottom: 10px; color: #333; }
 .secondary .widget ul { margin-top: 5px; padding: 10px 20px; }
 .secondary .widget ul ul { margin-top: 5px; padding: 0 5px; }
 .secondary .widget ul li { display: list-item; list-style: disc inside; }
@@ -397,6 +388,16 @@ body.smartposition #rollingarchives { border: 1px solid #DDD; border-top: none; 
 }
 
 /* --- Rounded corners ------------------------------------------------------------------------------------ */
+
+#header .menu li a { 
+	-webkit-border-top-left-radius: 0;
+	-webkit-border-top-right-radius: 0;
+}
+
+#header .menu li.admintab a {
+	-webkit-border-bottom-left-radius: 0;
+	-webkit-border-bottom-right-radius: 0;
+}
 
 div.trimmed .entry-foot {
 	-moz-border-radius-topleft: 10px;

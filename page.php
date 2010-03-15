@@ -50,18 +50,23 @@
 			?>
 			
 			<?php if( count($pageposts) > 0 ){ ?>
-			<div class="<?php
-			if($post->ID == 5){ ?>
-				toc
-			<?php }else{ ?>
-				matrix
-			<?php } ?>">	
+			<div id="<?php
+			if($post->ID == 5){ 
+				?>toc<?php
+			 }else{ 
+				?>matrix<?php
+			 } ?>">	
 				<ol>
 					<?php
 					foreach( $pageposts as $page )
 					{ ?>
 						<li>
 							<a href="<?php echo get_permalink( $page->ID ) ?>"><?php echo get_the_post_thumbnail( $page->ID ); ?><span class="title"><?php echo $page->post_title; ?></span></a>
+							<?php
+							$toc_shortdesc =  get_post_custom_values("toc", $page->ID);
+							if( $toc_shortdesc[0] ){
+								echo '<span class="desc">'.$toc_shortdesc[0].'</span>';
+							} ?>
 						</li>
 					<?php
 					} ?>
