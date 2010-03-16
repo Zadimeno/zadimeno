@@ -31,7 +31,44 @@
 					
 					<?php the_content(); ?>
 				</div><!-- .entry-content -->
+				
+				<?php
+					global $wpdb;
+					if( $post->ID == 5 ){
+						$querystr = "SELECT ID, post_title, guid FROM $wpdb->posts WHERE post_type = 'page' AND post_status = 'publish' AND post_parent = ".$post->ID." ORDER BY menu_order";
+					}else{
+						$querystr = "SELECT ID, post_title, guid FROM $wpdb->posts WHERE post_type = 'page' AND post_status = 'publish' AND post_parent = ".$post->ID." ORDER BY post_title";
+					}
+					$pageposts = $wpdb->get_results($querystr, OBJECT);
+				?>
 
+				<?php if( count($pageposts) > 0 ){ ?>
+				<div id="<?php
+				if($post->ID == 5){ 
+					?>toc<?php
+				 }else{ 
+					?>matrix<?php
+				 } ?>">	
+					<ol>
+						<?php
+						foreach( $pageposts as $page )
+						{ ?>
+							<li>
+								<a href="<?php echo get_permalink( $page->ID ) ?>"><?php echo get_the_post_thumbnail( $page->ID ); ?><span class="title"><?php echo $page->post_title; ?></span></a>
+								<?php
+								$toc_shortdesc =  get_post_custom_values("toc", $page->ID);
+								if( $toc_shortdesc[0] ){
+									echo '<span class="desc">'.$toc_shortdesc[0].'</span>';
+								} ?>
+							</li>
+						<?php
+						} ?>
+					</ol>
+					<div class="cleaner">&nbsp;</div>
+				</div><br /><br />
+				<?php } ?>	
+				
+				
 				<div class="entry-foot">
 					<?php wp_link_pages( array('before' => '<div class="entry-pages"><span>' . __('Pages:','k2_domain') . '</span>', 'after' => '</div>' ) ); ?>
 					
@@ -41,41 +78,6 @@
 				</div><!-- .entry-foot -->
 			</div><!-- #post-ID -->
 			
-			<?php
-				global $wpdb;
-				if( $post->ID == 5 ){
-					$querystr = "SELECT ID, post_title, guid FROM $wpdb->posts WHERE post_type = 'page' AND post_status = 'publish' AND post_parent = ".$post->ID." ORDER BY menu_order";
-				}else{
-					$querystr = "SELECT ID, post_title, guid FROM $wpdb->posts WHERE post_type = 'page' AND post_status = 'publish' AND post_parent = ".$post->ID." ORDER BY post_title";
-				}
-				$pageposts = $wpdb->get_results($querystr, OBJECT);
-			?>
-			
-			<?php if( count($pageposts) > 0 ){ ?>
-			<div id="<?php
-			if($post->ID == 5){ 
-				?>toc<?php
-			 }else{ 
-				?>matrix<?php
-			 } ?>">	
-				<ol>
-					<?php
-					foreach( $pageposts as $page )
-					{ ?>
-						<li>
-							<a href="<?php echo get_permalink( $page->ID ) ?>"><?php echo get_the_post_thumbnail( $page->ID ); ?><span class="title"><?php echo $page->post_title; ?></span></a>
-							<?php
-							$toc_shortdesc =  get_post_custom_values("toc", $page->ID);
-							if( $toc_shortdesc[0] ){
-								echo '<span class="desc">'.$toc_shortdesc[0].'</span>';
-							} ?>
-						</li>
-					<?php
-					} ?>
-				</ol>
-				<div class="cleaner">&nbsp;</div>
-			</div>	
-			<?php } ?>	
 				
 			<?php if ( comments_open() ): ?> 
 			<div class="comments">
