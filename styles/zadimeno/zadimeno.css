@@ -140,20 +140,20 @@ body { background: #f6f9fc url('images/background.jpg') center top no-repeat; }
 .hentry .entry-content h5 { font-size: 1.3em; 	line-height: normal;  margin: 0; padding: 0; font-weight: bold;  }
 .hentry .entry-content h6 { font-size: 1.2em; 	line-height: normal;  margin: 0; padding: 0; font-weight: bold;  }
 
-.hentry .entry-content p { margin: 0; padding-bottom: 20px; text-align: left;  }
+.hentry .entry-content p { margin: 0; line-height: 1.6em;  padding-bottom: 0.8em; text-align: left;  }
 
 .hentry .entry-content ul,
 .hentry .entry-content ol { padding: 20px 30px; margin: 0;   }
 .hentry .entry-content ul ul,
 .hentry .entry-content ol ol,
 .hentry .entry-content ol ul,
-.hentry .entry-content ul ol { padding: 10px 30px 0 30px; margin: 0;   }
+.hentry .entry-content ul ol { padding: 0 30px 0 30px; margin: 0;   }
 
 .hentry .entry-content p + ul,
 .hentry .entry-content p + ol { padding-top: 0; }
 
 .hentry .entry-content ol li,
-.hentry .entry-content ul li { list-style: disc outside; display: list-item; padding-bottom: 10px; }
+.hentry .entry-content ul li { list-style: disc outside; display: list-item; }
 
 .hentry .entry-content ol li { list-style: decimal outside; }
 
