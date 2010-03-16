@@ -34,7 +34,9 @@
 
 				<div class="entry-foot">
 					<?php wp_link_pages( array('before' => '<div class="entry-pages"><span>' . __('Pages:','k2_domain') . '</span>', 'after' => '</div>' ) ); ?>
-
+					
+ 					Последна редакция на <?php the_modified_time('j F Y'); ?> от <?php the_modified_author(); ?>
+					
 					<?php /* K2 Hook */ do_action('template_entry_foot'); ?>
 				</div><!-- .entry-foot -->
 			</div><!-- #post-ID -->
