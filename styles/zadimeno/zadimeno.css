@@ -132,7 +132,7 @@ body { background: #f6f9fc url('images/background.jpg') center top no-repeat; }
 .hentry .entry-head .entry-edit { display: none;  }
 .hentry .entry-head .entry-meta {  }
 
-.hentry .entry-content { padding: 10px 15px; margin: 10px 0 0 0; border: 1px solid #CCC; background: #f6f9fc; border-bottom: none; overflow: hidden; text-align: left;  } /* The meat and potatoes of every entry */
+.hentry .entry-content { padding: 10px 15px; line-height: 1.6em; margin: 10px 0 0 0; border: 1px solid #CCC; background: #f6f9fc; border-bottom: none; overflow: hidden; text-align: left;  } /* The meat and potatoes of every entry */
 
 .hentry .entry-content h2 { font-size: 2em; 	line-height: normal;  margin: 0; padding: 0; font-weight: normal;  }
 .hentry .entry-content h3 { font-size: 1.6em; 	line-height: normal;  margin: 0; padding: 0; font-weight: normal;  }
@@ -297,8 +297,8 @@ div.trimmed .entry-head { padding-bottom: 10px; }
 /* --- Widgets ------------------------------------------------------------------------------------ */
 .secondary .widget { margin-bottom: 30px; }
 .secondary .widget h4 { padding: 0 10px 5px 15px; border-bottom: 1px solid #ccd5de; margin-bottom: 10px; color: #333; }
-.secondary .widget ul { margin-top: 5px; padding: 10px 20px; }
-.secondary .widget ul ul { margin-top: 5px; padding: 0 5px; }
+.secondary .widget ul { margin-top: 0; padding: 10px 20px; }
+.secondary .widget ul ul { margin-top: 0; padding: 0 5px; }
 .secondary .widget ul li { display: list-item; list-style: disc inside; }
 
 .secondary .widget.widget_search #search-form-wrap,
