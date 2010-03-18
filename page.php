@@ -34,7 +34,7 @@
 				
 				<?php
 					global $wpdb;
-					if( $post->ID == 5 ){
+					if( ($post->ID == 5) || ($post->ID == 200) || ($post->ID == 258) || ($post->ID == 20) ){
 						$querystr = "SELECT ID, post_title, guid FROM $wpdb->posts WHERE post_type = 'page' AND post_status = 'publish' AND post_parent = ".$post->ID." ORDER BY menu_order";
 					}else{
 						$querystr = "SELECT ID, post_title, guid FROM $wpdb->posts WHERE post_type = 'page' AND post_status = 'publish' AND post_parent = ".$post->ID." ORDER BY post_title";
@@ -44,7 +44,7 @@
 
 				<?php if( count($pageposts) > 0 ){ ?>
 				<div id="<?php
-				if($post->ID == 5){ 
+				if(($post->ID == 5) || ($post->ID == 200) || ($post->ID == 258) || ($post->ID == 20)){ 
 					?>toc<?php
 				 }else{ 
 					?>matrix<?php

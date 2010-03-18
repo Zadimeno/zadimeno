@@ -153,7 +153,7 @@ body { background: #f6f9fc url('images/background.jpg') center top no-repeat; }
 .hentry .entry-content p + ol { padding-top: 0; }
 
 .hentry .entry-content ol li,
-.hentry .entry-content ul li { list-style: disc outside; display: list-item; }
+.hentry .entry-content ul li { list-style: disc outside; display: list-item; line-height: 1.6em;  }
 
 .hentry .entry-content ol li { list-style: decimal outside; }
 
