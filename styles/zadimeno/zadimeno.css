@@ -382,6 +382,9 @@ body.home .secondary .widget.widget_text#text-3 { display: none; }
 #rollingarchives { margin-bottom: 20px; }
 body.smartposition #rollingarchives { border: 1px solid #DDD; border-top: none; border-left: none; margin-bottom: 0; }
 
+
+.xmlgmdiv { border: 1px solid #ccd5de; padding: 5px; background: #FFF; }
+
 /* --- Box shadows ------------------------------------------------------------------------------------ */
 
 .secondary .widget.widget_search #searchload {
